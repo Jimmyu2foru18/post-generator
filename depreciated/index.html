@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Content Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Content Generator</h1>
+        <div class="input-section">
+            <textarea id="topic" placeholder="Enter your topic here..."></textarea>
+            <div class="options">
+                <select id="tone">
+                    <option value="professional">Professional</option>
+                    <option value="casual">Casual</option>
+                    <option value="technical">Technical</option>
+                </select>
+                <input type="number" id="length" placeholder="5" value="5" min="3" max="15">
+            </div>
+            <button id="generate">Generate Content</button>
+        </div>
+        <div class="output-section">
+            <div id="loading" class="hidden">Generating...</div>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html> 
